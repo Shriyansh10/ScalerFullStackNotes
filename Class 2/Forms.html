@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <!-- action is used to take the user to the next page on submitting -->
+    <!-- name property is used to get and transfer the values to the next page -->
+    <form action="/signin">
+        <div>
+            <!-- Username -->
+            <label for="username">Username</label>
+            <input placeholder="username" type="text" id="username" name="username">
+        </div>
+        <div> 
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input placeholder="password" type="password" id="password" name="password">
+        </div>
+        <div> 
+            <!-- Password -->
+            <input type="checkbox" id="remember_me" name="remember_me">
+            <label for="remember_me">Remember Me</label>
+        </div>
+        <div>
+            <!-- Button -->
+            <button>Submit</button>
+        </div>
+        <!-- http://192.168.1.8:5500/Class%202/Forms.html?username=Shriyash&password=1234456&remember_me=on -->
+    </form>
+</body>
+</html>
