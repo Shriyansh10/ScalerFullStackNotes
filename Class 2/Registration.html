@@ -22,15 +22,25 @@
         <input type="text" placeholder="Enter Age" id="age">
     </div>
     <div>
+        <label>Gender</label><br>
         <!-- Gender -->
-        <label for="gender">Gender</label>
-        <input type="radio" id="gender" value="Male" name="gender">
-        <input type="radio" id="gender" value="Female" name="gender">
-        <input type="radio" id="gender" value="Other" name="gender">
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="other" value="other" name="gender">
+        <label for="other">Others</label>
     </div>
-
-    <!-- Dob  -->
-    <!-- Phone -->
+    <div>
+        <!-- Dob  -->
+        <label for="dob">Date of Birth</label>
+        <input type="date">
+    </div>
+    <div>
+        <!-- Phone -->
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone" min="10" max="10">
+    </div>
     <!-- Address  -->
     <div>
         <!-- Degree  -->

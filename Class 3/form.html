@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        form > div{
+            height: 30px;
+        }
+
+        label{
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            width: 105px;
+        }
+        
+        label.field{
+            height: 20px;
+        }
+        .field.password{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Login Form</h1>
+    <!-- action is used to take the user to the next page on submitting -->
+    <!-- name property is used to get and transfer the values to the next page -->
+    <form action="/signin">
+        <div>
+            <!-- Username -->
+            <label for="username">Username</label>
+            <input class="field" placeholder="username" type="text" id="username" name="username">
+        </div>
+        <div> 
+            <!-- Password -->
+            <label class="field password" for="password">Password</label>
+            <input class="field" placeholder="password" type="password" id="password" name="password">
+        </div>
+        <div> 
+            <!-- Remember Me -->
+            <input type="checkbox" id="remember_me" name="remember_me">
+            <label  for="remember_me">Remember Me</label>
+        </div>
+        <div>
+            <!-- Button -->
+            <button>Submit</button>
+        </div>
+        <!-- http://192.168.1.8:5500/Class%202/Forms.html?username=Shriyash&password=1234456&remember_me=on -->
+    </form>
+</body>
+</html>

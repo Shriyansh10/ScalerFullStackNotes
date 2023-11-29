@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highlight{
+    background-color: yellow;
+}
+#special{
+    font-size: 20px;
+}
+input[type=text]{
+    border: 10px solid grey;
+}
+a:hover{
+    color: red;
+}
