@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Internal CSS -->
+    <style>
+        *{
+            /* these properties does not gets inherited by child */
+            border: 0;
+            margin: 0;
+        }
+        /*targeting the specific element with the help of specific attribute*/
+        ul[type="square"]{
+            color: grey;
+        }
+        /*targeting the child and nested child*/
+        ol li{
+            color: pink;
+        }
+        /*targeting only the child*/
+        .parent01 > li{
+            color: magenta;
+        }
+        ul[type="circle"] > .post1{
+            color: bisque;
+        }
+
+        /*targeting an element and its specific classes*/
+        li.post2{
+            color: springgreen;
+        }
+        
+        /*targeting using the no of child if there are many child*/
+        section p:nth-child(3){
+            color: aqua;
+        }
+        section p:first-child{
+            font-weight: bold;
+        }
+        section p:last-child{
+            font-style: italic;
+        }
+        header{
+            background-image: url("https://media.licdn.com/dms/image/D5616AQFnESIfVSytig/profile-displaybackgroundimage-shrink_350_1400/0/1673038043183?e=1707350400&v=beta&t=SIOAxI8n4T1UybrAaaP0VSri-zuPn1fhVkG7WRX4M_g");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="businessName">Business Name</h1>
+        <!-- inline css -->
+        <img style="width: 200px; border-radius:50%" src="https://media.licdn.com/dms/image/D4D35AQEBvxszmxiQKA/profile-framedphoto-shrink_200_200/0/1661952164664?e=1702562400&v=beta&t=z6jdhdILgkNrXfINmMtD1ITNDin6IjyV2QgXEKSwgO4" alt="Profile Pic">
+        <nav>
+            <!-- target="_blank" use for preventing opening pages on the same page -->
+            <span><a href="https://www.linkedin.com/feed">Link 1</a></span>
+            <span><a target="_blank" href="https://www.google.com/">Link 2</a></span>
+            <!-- _/ is used for continuing to the same domain -->
+            <span><a target="_blank" href="/index.html">Link 3</a></span>
+        </nav>
+    </header>
+    <hr>
+    
+
+    <div>
+        <section>
+            <p>P1</p>
+            <p>P2</p>
+            <p>P3</p>
+            <p>P4</p>
+            <p>P5</p>
+        </section>
+        <section>
+            <h1>Posts</h1>
+            <ol type="1" class="parent01">
+                <li>Post 1</li>
+                <ol type="a">
+                    <li>Sub Post 1</li>
+                    <li>Sub Post 2</li>
+                </ol>
+                <li class="bold">Post 2</li>
+                <li class="bold">Post 3</li>
+                <dl>
+                    <dt>Iphone 13</dt>
+                    <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae minima, ullam similique maiores voluptatem optio dolores ipsum eos deleniti ducimus quis voluptatum dicta tempore nobis est ad minus eaque cupiditate enim quas? Ratione, eum!
+                    </dd>
+                    <dt>Iphone 13</dt>
+                    <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae minima, ullam similique maiores voluptatem optio dolores ipsum eos deleniti ducimus quis voluptatum dicta tempore nobis est ad minus eaque cupiditate enim quas? Ratione, eum!
+                    </dd>
+                </dl>
+            </ol>
+            <ul type="square">
+                <li class="post">Post 1</li>
+                <li class="post">Post 2</li>
+                <li class="post">Post 3</li>
+                <li class="post">Post 4</li>
+            </ul>
+            <ul type="circle">
+                <li class="post1">Post 1</li>
+                <li class="post1">Post 2</li>
+                <li class="post2">Post 3</li>
+                <li class="post2">Post 4</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            All rights reserved @2023
+        </div>
+    </footer>
+    </body>
+    
+    </html>
