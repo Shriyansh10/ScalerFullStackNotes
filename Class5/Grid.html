@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            width: 100vw;
+            background-color: #ccc;
+            /* give specific values and one row will have this many cols and line break will occur if more items are there */
+
+            /*grid-template-columns: 100px 100px 100px;*/
+            
+            /* or
+            automatically divide the space in the mentioned no of columns and is responsive 
+            */
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .box{
+            border: red solid 1px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+</body>
+</html>
